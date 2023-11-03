@@ -180,7 +180,7 @@ auto hw_device::initialize_new_device(descriptor_t *device_descriptor_ptr) noexc
         // @todo this is a workaround to optionally load accfg_device_get_iaa_cap
         DIAGA("%5s: IAACAP: Failed to read IAACAP, HW gen 2 features will not be used\n", name_ptr);
         if (version_major_ > 1u) {
-            return HW_ACCELERATOR_LIBACCEL_NOT_FOUND;
+            //return HW_ACCELERATOR_LIBACCEL_NOT_FOUND;
         }
     }
 
